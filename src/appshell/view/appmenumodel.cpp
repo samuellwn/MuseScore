@@ -445,13 +445,29 @@ MenuItemList AppMenuModel::makeNotesItems()
         makeMenuItem("note-a"),
         makeMenuItem("note-b"),
         makeSeparator(),
+        makeMenuItem("note-do"),
+        makeMenuItem("note-re"),
+        makeMenuItem("note-mi"),
+        makeMenuItem("note-fa"),
+        makeMenuItem("note-so"),
+        makeMenuItem("note-la"),
+        makeMenuItem("note-ti"),
+        makeSeparator(),
         makeMenuItem("chord-c"),
         makeMenuItem("chord-d"),
         makeMenuItem("chord-e"),
         makeMenuItem("chord-f"),
         makeMenuItem("chord-g"),
         makeMenuItem("chord-a"),
-        makeMenuItem("chord-b")
+        makeMenuItem("chord-b"),
+        makeSeparator(),
+        makeMenuItem("chord-do"),
+        makeMenuItem("chord-re"),
+        makeMenuItem("chord-mi"),
+        makeMenuItem("chord-fa"),
+        makeMenuItem("chord-so"),
+        makeMenuItem("chord-la"),
+        makeMenuItem("chord-ti")
     };
 
     return items;

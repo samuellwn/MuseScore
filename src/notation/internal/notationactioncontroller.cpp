@@ -132,6 +132,30 @@ void NotationActionController::init()
     registerNoteAction("insert-a", NoteName::A, NoteAddingMode::InsertChord);
     registerNoteAction("insert-b", NoteName::B, NoteAddingMode::InsertChord);
 
+    registerNoteAction("note-do", NoteName::Do);
+    registerNoteAction("note-re", NoteName::Re);
+    registerNoteAction("note-mi", NoteName::Mi);
+    registerNoteAction("note-fa", NoteName::Fa);
+    registerNoteAction("note-so", NoteName::So);
+    registerNoteAction("note-la", NoteName::La);
+    registerNoteAction("note-ti", NoteName::Ti);
+
+    registerNoteAction("chord-do", NoteName::Do, NoteAddingMode::CurrentChord);
+    registerNoteAction("chord-re", NoteName::Re, NoteAddingMode::CurrentChord);
+    registerNoteAction("chord-mi", NoteName::Mi, NoteAddingMode::CurrentChord);
+    registerNoteAction("chord-fa", NoteName::Fa, NoteAddingMode::CurrentChord);
+    registerNoteAction("chord-so", NoteName::So, NoteAddingMode::CurrentChord);
+    registerNoteAction("chord-la", NoteName::La, NoteAddingMode::CurrentChord);
+    registerNoteAction("chord-ti", NoteName::Ti, NoteAddingMode::CurrentChord);
+
+    registerNoteAction("insert-do", NoteName::Do, NoteAddingMode::InsertChord);
+    registerNoteAction("insert-re", NoteName::Re, NoteAddingMode::InsertChord);
+    registerNoteAction("insert-mi", NoteName::Mi, NoteAddingMode::InsertChord);
+    registerNoteAction("insert-fa", NoteName::Fa, NoteAddingMode::InsertChord);
+    registerNoteAction("insert-so", NoteName::So, NoteAddingMode::InsertChord);
+    registerNoteAction("insert-la", NoteName::La, NoteAddingMode::InsertChord);
+    registerNoteAction("insert-ti", NoteName::Ti, NoteAddingMode::InsertChord);
+
     registerAction("next-text-element", &Controller::nextTextElement, &Controller::textNavigationAvailable);
     registerAction("prev-text-element", &Controller::prevTextElement, &Controller::textNavigationAvailable);
     registerAction("next-word", &Controller::nextWord, &Controller::textNavigationAvailable);

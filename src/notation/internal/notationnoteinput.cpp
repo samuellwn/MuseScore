@@ -333,6 +333,13 @@ void NotationNoteInput::addNote(NoteName noteName, NoteAddingMode addingMode)
     int inote = static_cast<int>(noteName);
     bool addToUpOnCurrentChord = addingMode == NoteAddingMode::CurrentChord;
     bool insertNewChord = addingMode == NoteAddingMode::InsertChord;
+    if (inote > 6) {
+        auto is = score()->inputState();
+        auto staff = score()->staff(is.track() / VOICES);
+        auto key = staff->key(score()->pos());
+        auto intv = calculateInterval(Key::C, key).diatonic;
+        inote = (inote + intv) % 7;
+    }
     score()->cmdAddPitch(editData, inote, addToUpOnCurrentChord, insertNewChord);
     apply();
 

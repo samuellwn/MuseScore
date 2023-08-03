@@ -59,6 +59,20 @@ static const TranslatableString noteG = TranslatableString("action", "G");
 static const TranslatableString noteA = TranslatableString("action", "A");
 //: Note
 static const TranslatableString noteB = TranslatableString("action", "B");
+//: Note
+static const TranslatableString noteDo = TranslatableString("action", "Do");
+//: Note
+static const TranslatableString noteRe = TranslatableString("action", "Re");
+//: Note
+static const TranslatableString noteMi = TranslatableString("action", "Mi");
+//: Note
+static const TranslatableString noteFa = TranslatableString("action", "Fa");
+//: Note
+static const TranslatableString noteSo = TranslatableString("action", "So");
+//: Note
+static const TranslatableString noteLa = TranslatableString("action", "La");
+//: Note
+static const TranslatableString noteTi = TranslatableString("action", "Ti");
 
 static const TranslatableString Enter_note_X = TranslatableString("action", "Enter note %1");
 static const TranslatableString Add_X_to_chord = TranslatableString("action", "Add %1 to chord");
@@ -1060,6 +1074,125 @@ const UiActionList NotationUiActions::m_actions = {
              mu::context::UiCtxNotationOpened,
              mu::context::CTX_ANY,
              Insert_X.arg(noteB)
+             ),
+    UiAction("note-do",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             noteDo,
+             Enter_note_X.arg(noteDo)
+             ),
+    UiAction("note-re",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             noteRe,
+             Enter_note_X.arg(noteRe)
+             ),
+    UiAction("note-mi",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             noteMi,
+             Enter_note_X.arg(noteMi)
+             ),
+    UiAction("note-fa",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             noteFa,
+             Enter_note_X.arg(noteFa)
+             ),
+    UiAction("note-so",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             noteSo,
+             Enter_note_X.arg(noteSo)
+             ),
+    UiAction("note-la",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             noteLa,
+             Enter_note_X.arg(noteLa)
+             ),
+    UiAction("note-ti",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             noteTi,
+             Enter_note_X.arg(noteTi)
+             ),
+    UiAction("chord-do",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             Add_X_to_chord.arg(noteDo),
+             Add_note_X_to_chord.arg(noteDo)
+             ),
+    UiAction("chord-re",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             Add_X_to_chord.arg(noteRe),
+             Add_note_X_to_chord.arg(noteRe)
+             ),
+    UiAction("chord-mi",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             Add_X_to_chord.arg(noteMi),
+             Add_note_X_to_chord.arg(noteMi)
+             ),
+    UiAction("chord-fa",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             Add_X_to_chord.arg(noteFa),
+             Add_note_X_to_chord.arg(noteFa)
+             ),
+    UiAction("chord-so",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             Add_X_to_chord.arg(noteSo),
+             Add_note_X_to_chord.arg(noteSo)
+             ),
+    UiAction("chord-la",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             Add_X_to_chord.arg(noteLa),
+             Add_note_X_to_chord.arg(noteLa)
+             ),
+    UiAction("chord-ti",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             Add_X_to_chord.arg(noteTi),
+             Add_note_X_to_chord.arg(noteTi)
+             ),
+    UiAction("insert-do",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             Insert_X.arg(noteDo)
+             ),
+    UiAction("insert-re",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             Insert_X.arg(noteRe)
+             ),
+    UiAction("insert-mi",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             Insert_X.arg(noteMi)
+             ),
+    UiAction("insert-fa",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             Insert_X.arg(noteFa)
+             ),
+    UiAction("insert-so",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             Insert_X.arg(noteSo)
+             ),
+    UiAction("insert-la",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             Insert_X.arg(noteLa)
+             ),
+    UiAction("insert-ti",
+             mu::context::UiCtxNotationOpened,
+             mu::context::CTX_ANY,
+             Insert_X.arg(noteTi)
              ),
     UiAction("rest",
              mu::context::UiCtxNotationOpened,

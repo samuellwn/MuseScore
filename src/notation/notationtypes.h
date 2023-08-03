@@ -222,7 +222,15 @@ enum class NoteName
     F,
     G,
     A,
-    B
+    B,
+
+    Do,
+    Re,
+    Mi,
+    Fa,
+    So,
+    La,
+    Ti,
 };
 
 enum class NoteAddingMode
